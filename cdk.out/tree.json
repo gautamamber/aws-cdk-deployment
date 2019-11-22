@@ -79,7 +79,7 @@
                   "aws:cdk:cloudformation:props": {
                     "code": {
                       "s3Bucket": {
-                        "Ref": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cS3Bucket9459BB3E"
+                        "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3Bucket10804CF2"
                       },
                       "s3Key": {
                         "Fn::Join": [
@@ -92,7 +92,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cS3VersionKeyF26FBAE7"
+                                      "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3VersionKey4F998056"
                                     }
                                   ]
                                 }
@@ -105,7 +105,7 @@
                                   "Fn::Split": [
                                     "||",
                                     {
-                                      "Ref": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cS3VersionKeyF26FBAE7"
+                                      "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3VersionKey4F998056"
                                     }
                                   ]
                                 }
@@ -132,21 +132,250 @@
             "id": "AssetParameters",
             "path": "hello-cdk-1/AssetParameters",
             "children": {
-              "4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c": {
-                "id": "4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c",
-                "path": "hello-cdk-1/AssetParameters/4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c",
+              "0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778": {
+                "id": "0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778",
+                "path": "hello-cdk-1/AssetParameters/0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778",
                 "children": {
                   "S3Bucket": {
                     "id": "S3Bucket",
-                    "path": "hello-cdk-1/AssetParameters/4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c/S3Bucket"
+                    "path": "hello-cdk-1/AssetParameters/0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778/S3Bucket"
                   },
                   "S3VersionKey": {
                     "id": "S3VersionKey",
-                    "path": "hello-cdk-1/AssetParameters/4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c/S3VersionKey"
+                    "path": "hello-cdk-1/AssetParameters/0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778/S3VersionKey"
                   },
                   "ArtifactHash": {
                     "id": "ArtifactHash",
-                    "path": "hello-cdk-1/AssetParameters/4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738c/ArtifactHash"
+                    "path": "hello-cdk-1/AssetParameters/0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778/ArtifactHash"
+                  }
+                }
+              }
+            }
+          },
+          "HelloHitCounter": {
+            "id": "HelloHitCounter",
+            "path": "hello-cdk-1/HelloHitCounter",
+            "children": {
+              "Hits": {
+                "id": "Hits",
+                "path": "hello-cdk-1/HelloHitCounter/Hits",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/HelloHitCounter/Hits/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::DynamoDB::Table",
+                      "aws:cdk:cloudformation:props": {
+                        "keySchema": [
+                          {
+                            "attributeName": "path",
+                            "keyType": "HASH"
+                          }
+                        ],
+                        "attributeDefinitions": [
+                          {
+                            "attributeName": "path",
+                            "attributeType": "S"
+                          }
+                        ],
+                        "provisionedThroughput": {
+                          "readCapacityUnits": 5,
+                          "writeCapacityUnits": 5
+                        }
+                      }
+                    }
+                  },
+                  "ScalingRole": {
+                    "id": "ScalingRole",
+                    "path": "hello-cdk-1/HelloHitCounter/Hits/ScalingRole"
+                  }
+                }
+              },
+              "HitCounterHandler": {
+                "id": "HitCounterHandler",
+                "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler",
+                "children": {
+                  "ServiceRole": {
+                    "id": "ServiceRole",
+                    "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/ServiceRole",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/ServiceRole/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                          "aws:cdk:cloudformation:props": {
+                            "assumeRolePolicyDocument": {
+                              "Statement": [
+                                {
+                                  "Action": "sts:AssumeRole",
+                                  "Effect": "Allow",
+                                  "Principal": {
+                                    "Service": "lambda.amazonaws.com"
+                                  }
+                                }
+                              ],
+                              "Version": "2012-10-17"
+                            },
+                            "managedPolicyArns": [
+                              {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    "arn:",
+                                    {
+                                      "Ref": "AWS::Partition"
+                                    },
+                                    ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+                                  ]
+                                ]
+                              }
+                            ]
+                          }
+                        }
+                      },
+                      "DefaultPolicy": {
+                        "id": "DefaultPolicy",
+                        "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/ServiceRole/DefaultPolicy",
+                        "children": {
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/ServiceRole/DefaultPolicy/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                              "aws:cdk:cloudformation:props": {
+                                "policyDocument": {
+                                  "Statement": [
+                                    {
+                                      "Action": [
+                                        "dynamodb:BatchGetItem",
+                                        "dynamodb:GetRecords",
+                                        "dynamodb:GetShardIterator",
+                                        "dynamodb:Query",
+                                        "dynamodb:GetItem",
+                                        "dynamodb:Scan",
+                                        "dynamodb:BatchWriteItem",
+                                        "dynamodb:PutItem",
+                                        "dynamodb:UpdateItem",
+                                        "dynamodb:DeleteItem"
+                                      ],
+                                      "Effect": "Allow",
+                                      "Resource": [
+                                        {
+                                          "Fn::GetAtt": [
+                                            "HelloHitCounterHits7AAEBF80",
+                                            "Arn"
+                                          ]
+                                        },
+                                        {
+                                          "Ref": "AWS::NoValue"
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "Action": "lambda:InvokeFunction",
+                                      "Effect": "Allow",
+                                      "Resource": {
+                                        "Fn::GetAtt": [
+                                          "HelloHandler2E4FBA4D",
+                                          "Arn"
+                                        ]
+                                      }
+                                    }
+                                  ],
+                                  "Version": "2012-10-17"
+                                },
+                                "policyName": "HelloHitCounterHitCounterHandlerServiceRoleDefaultPolicy1487A60A",
+                                "roles": [
+                                  {
+                                    "Ref": "HelloHitCounterHitCounterHandlerServiceRoleD45002B8"
+                                  }
+                                ]
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "Code": {
+                    "id": "Code",
+                    "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/Code",
+                    "children": {
+                      "Stage": {
+                        "id": "Stage",
+                        "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/Code/Stage"
+                      },
+                      "AssetBucket": {
+                        "id": "AssetBucket",
+                        "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/Code/AssetBucket"
+                      }
+                    }
+                  },
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/HelloHitCounter/HitCounterHandler/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::Lambda::Function",
+                      "aws:cdk:cloudformation:props": {
+                        "code": {
+                          "s3Bucket": {
+                            "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3Bucket10804CF2"
+                          },
+                          "s3Key": {
+                            "Fn::Join": [
+                              "",
+                              [
+                                {
+                                  "Fn::Select": [
+                                    0,
+                                    {
+                                      "Fn::Split": [
+                                        "||",
+                                        {
+                                          "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3VersionKey4F998056"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "Fn::Select": [
+                                    1,
+                                    {
+                                      "Fn::Split": [
+                                        "||",
+                                        {
+                                          "Ref": "AssetParameters0811bdab98a6ab5120ebaf957692a88bd3ca3e695839c5bff8e243a31b709778S3VersionKey4F998056"
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            ]
+                          }
+                        },
+                        "handler": "hitcount.handler",
+                        "role": {
+                          "Fn::GetAtt": [
+                            "HelloHitCounterHitCounterHandlerServiceRoleD45002B8",
+                            "Arn"
+                          ]
+                        },
+                        "runtime": "python3.6",
+                        "environment": {
+                          "variables": {
+                            "DOWNSTREAM_FUNCTION_NAME": {
+                              "Ref": "HelloHandler2E4FBA4D"
+                            },
+                            "HITS_TABLE_NAME": {
+                              "Ref": "HelloHitCounterHits7AAEBF80"
+                            }
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }
@@ -199,7 +428,7 @@
                           "Ref": "EndpointEEF1FD8F"
                         },
                         "deploymentId": {
-                          "Ref": "EndpointDeployment318525DAdd8a7e35b2831c2f10466e03f19a62ad"
+                          "Ref": "EndpointDeployment318525DA88a551e651f90680cd31a354046794b6"
                         },
                         "stageName": "prod"
                       }
@@ -307,7 +536,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "HelloHandler2E4FBA4D",
+                                    "HelloHitCounterHitCounterHandlerDAEA7B37",
                                     "Arn"
                                   ]
                                 },
@@ -348,7 +577,7 @@
                                 "action": "lambda:InvokeFunction",
                                 "functionName": {
                                   "Fn::GetAtt": [
-                                    "HelloHandler2E4FBA4D",
+                                    "HelloHitCounterHitCounterHandlerDAEA7B37",
                                     "Arn"
                                   ]
                                 },
@@ -403,7 +632,7 @@
                                         ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
                                         {
                                           "Fn::GetAtt": [
-                                            "HelloHandler2E4FBA4D",
+                                            "HelloHitCounterHitCounterHandlerDAEA7B37",
                                             "Arn"
                                           ]
                                         },
@@ -433,7 +662,7 @@
                             "action": "lambda:InvokeFunction",
                             "functionName": {
                               "Fn::GetAtt": [
-                                "HelloHandler2E4FBA4D",
+                                "HelloHitCounterHitCounterHandlerDAEA7B37",
                                 "Arn"
                               ]
                             },
@@ -474,7 +703,7 @@
                             "action": "lambda:InvokeFunction",
                             "functionName": {
                               "Fn::GetAtt": [
-                                "HelloHandler2E4FBA4D",
+                                "HelloHitCounterHitCounterHandlerDAEA7B37",
                                 "Arn"
                               ]
                             },
@@ -532,7 +761,7 @@
                                     ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
                                     {
                                       "Fn::GetAtt": [
-                                        "HelloHandler2E4FBA4D",
+                                        "HelloHitCounterHitCounterHandlerDAEA7B37",
                                         "Arn"
                                       ]
                                     },
