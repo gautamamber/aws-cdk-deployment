@@ -27,10 +27,10 @@
               "artifactHashParameter": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cArtifactHash5A902419"
             },
             "trace": [
-              "Stack.addFileAsset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/stack.js:345:23)",
-              "new Asset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/stack.js:345:23)",
+              "new Asset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -49,8 +49,8 @@
             "type": "aws:cdk:logicalId",
             "data": "HelloHandlerServiceRole11EF7C63",
             "trace": [
-              "new Role (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
+              "new Role (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:59:35)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -69,7 +69,7 @@
             "type": "aws:cdk:logicalId",
             "data": "HelloHandler2E4FBA4D",
             "trace": [
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:75:26)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:75:26)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -88,11 +88,11 @@
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cS3Bucket9459BB3E",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
-              "new Asset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
+              "new FileAssetParameters (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:11:36)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
+              "new Asset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -111,11 +111,11 @@
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cS3VersionKeyF26FBAE7",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
-              "new Asset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
+              "new FileAssetParameters (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:15:35)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
+              "new Asset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -134,11 +134,321 @@
             "type": "aws:cdk:logicalId",
             "data": "AssetParameters4ac28dceefe5900cb0a8bcbaa9e06ffcfbb294b59558486f9e7abfe2dbaa738cArtifactHash5A902419",
             "trace": [
-              "new FileAssetParameters (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
-              "Stack.addFileAsset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
-              "new Asset (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
-              "AssetCode.bind (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
-              "new Function (/tmp/jsii-kernel-LxFu2k/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
+              "new FileAssetParameters (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/private/asset-parameters.js:19:38)",
+              "Stack.addFileAsset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/core/lib/stack.js:335:22)",
+              "new Asset (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-s3-assets/lib/asset.js:27:32)",
+              "AssetCode.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/code.js:135:26)",
+              "new Function (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function.js:73:33)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointEEF1FD8F",
+            "trace": [
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:28:26)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Deployment/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeployment318525DAdd8a7e35b2831c2f10466e03f19a62ad",
+            "trace": [
+              "new Deployment (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/deployment.js:39:25)",
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:164:38)",
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/DeploymentStage.prod/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointDeploymentStageprodB78BEEA0",
+            "trace": [
+              "new Stage (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/stage.js:27:26)",
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:172:36)",
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Endpoint": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpoint8024A810",
+            "trace": [
+              "LambdaRestApi.configureDeployment (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:173:13)",
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:42:14)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/CloudWatchRole/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointCloudWatchRoleC3C64E0F",
+            "trace": [
+              "new Role (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-iam/lib/role.js:35:22)",
+              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:182:22)",
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:45:18)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Account": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointAccountB8304247",
+            "trace": [
+              "LambdaRestApi.configureCloudWatchRole (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:186:26)",
+              "new RestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/restapi.js:45:18)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:17:9)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/{proxy+}/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Endpointproxy39E2174E",
+            "trace": [
+              "new Resource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:170:26)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:201:9)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/{proxy+}/ANY/ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionhellocdk1Endpoint01F8FAD0ANYproxy9F2F4B57",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:30:22)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:22)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYApiPermissionTesthellocdk1Endpoint01F8FAD0ANYproxy80E7F2D4",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:37:26)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:22)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/{proxy+}/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointproxyANYC09721C5",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:218:22)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/ANY/ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionhellocdk1Endpoint01F8FAD0ANY44BC8FE0",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:30:22)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
+              "RootResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:216:33)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/ANY/ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANYApiPermissionTesthellocdk1Endpoint01F8FAD0ANYB091E768",
+            "trace": [
+              "Function.addPermission (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-lambda/lib/function-base.js:21:9)",
+              "LambdaIntegration.bind (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/integrations/lambda.js:37:26)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:75:21)",
+              "Method.renderIntegration (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:70:29)",
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:27:31)",
+              "RootResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:216:33)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
+              "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:794:20)",
+              "tryOnImmediate (timers.js:752:5)",
+              "processImmediate [as _immediateCallback] (timers.js:729:5)"
+            ]
+          }
+        ],
+        "/hello-cdk-1/Endpoint/Default/ANY/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "EndpointANY485C938B",
+            "trace": [
+              "new Method (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/method.js:32:26)",
+              "RootResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:17:16)",
+              "ProxyResource.addMethod (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:216:33)",
+              "new ProxyResource (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:209:35)",
+              "RootResource.addProxy (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/resource.js:20:16)",
+              "new LambdaRestApi (/tmp/jsii-kernel-tWf5h4/node_modules/@aws-cdk/aws-apigateway/lib/lambda-api.js:19:23)",
               "obj._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
               "Kernel._wrapSandboxCode (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
               "Kernel._create (/home/amber/Desktop/Amber_Gautam/AWS_developer_associate/cdk/cdk-env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
@@ -172,6 +482,12 @@
       "@aws-cdk/aws-s3-assets": "1.17.1",
       "@aws-cdk/aws-sqs": "1.17.1",
       "@aws-cdk/aws-lambda": "1.17.1",
+      "@aws-cdk/aws-sns": "1.17.1",
+      "@aws-cdk/aws-cloudformation": "1.17.1",
+      "@aws-cdk/aws-route53": "1.17.1",
+      "@aws-cdk/aws-certificatemanager": "1.17.1",
+      "@aws-cdk/aws-elasticloadbalancingv2": "1.17.1",
+      "@aws-cdk/aws-apigateway": "1.17.1",
       "jsii-runtime": "Python/3.6.8"
     }
   }

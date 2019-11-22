@@ -151,6 +151,405 @@
                 }
               }
             }
+          },
+          "Endpoint": {
+            "id": "Endpoint",
+            "path": "hello-cdk-1/Endpoint",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-1/Endpoint/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::RestApi",
+                  "aws:cdk:cloudformation:props": {
+                    "name": "Endpoint"
+                  }
+                }
+              },
+              "Deployment": {
+                "id": "Deployment",
+                "path": "hello-cdk-1/Endpoint/Deployment",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/Endpoint/Deployment/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Deployment",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "EndpointEEF1FD8F"
+                        },
+                        "description": "Automatically created by the RestApi construct"
+                      }
+                    }
+                  }
+                }
+              },
+              "DeploymentStage.prod": {
+                "id": "DeploymentStage.prod",
+                "path": "hello-cdk-1/Endpoint/DeploymentStage.prod",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/Endpoint/DeploymentStage.prod/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::ApiGateway::Stage",
+                      "aws:cdk:cloudformation:props": {
+                        "restApiId": {
+                          "Ref": "EndpointEEF1FD8F"
+                        },
+                        "deploymentId": {
+                          "Ref": "EndpointDeployment318525DAdd8a7e35b2831c2f10466e03f19a62ad"
+                        },
+                        "stageName": "prod"
+                      }
+                    }
+                  }
+                }
+              },
+              "Endpoint": {
+                "id": "Endpoint",
+                "path": "hello-cdk-1/Endpoint/Endpoint"
+              },
+              "CloudWatchRole": {
+                "id": "CloudWatchRole",
+                "path": "hello-cdk-1/Endpoint/CloudWatchRole",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/Endpoint/CloudWatchRole/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Role",
+                      "aws:cdk:cloudformation:props": {
+                        "assumeRolePolicyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sts:AssumeRole",
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "apigateway.amazonaws.com"
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "managedPolicyArns": [
+                          {
+                            "Fn::Join": [
+                              "",
+                              [
+                                "arn:",
+                                {
+                                  "Ref": "AWS::Partition"
+                                },
+                                ":iam::aws:policy/service-role/AmazonAPIGatewayPushToCloudWatchLogs"
+                              ]
+                            ]
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "Account": {
+                "id": "Account",
+                "path": "hello-cdk-1/Endpoint/Account",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::ApiGateway::Account",
+                  "aws:cdk:cloudformation:props": {
+                    "cloudWatchRoleArn": {
+                      "Fn::GetAtt": [
+                        "EndpointCloudWatchRoleC3C64E0F",
+                        "Arn"
+                      ]
+                    }
+                  }
+                }
+              },
+              "Default": {
+                "id": "Default",
+                "path": "hello-cdk-1/Endpoint/Default",
+                "children": {
+                  "{proxy+}": {
+                    "id": "{proxy+}",
+                    "path": "hello-cdk-1/Endpoint/Default/{proxy+}",
+                    "children": {
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "hello-cdk-1/Endpoint/Default/{proxy+}/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::ApiGateway::Resource",
+                          "aws:cdk:cloudformation:props": {
+                            "parentId": {
+                              "Fn::GetAtt": [
+                                "EndpointEEF1FD8F",
+                                "RootResourceId"
+                              ]
+                            },
+                            "pathPart": "{proxy+}",
+                            "restApiId": {
+                              "Ref": "EndpointEEF1FD8F"
+                            }
+                          }
+                        }
+                      },
+                      "ANY": {
+                        "id": "ANY",
+                        "path": "hello-cdk-1/Endpoint/Default/{proxy+}/ANY",
+                        "children": {
+                          "ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}": {
+                            "id": "ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}",
+                            "path": "hello-cdk-1/Endpoint/Default/{proxy+}/ANY/ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                              "aws:cdk:cloudformation:props": {
+                                "action": "lambda:InvokeFunction",
+                                "functionName": {
+                                  "Fn::GetAtt": [
+                                    "HelloHandler2E4FBA4D",
+                                    "Arn"
+                                  ]
+                                },
+                                "principal": "apigateway.amazonaws.com",
+                                "sourceArn": {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      "arn:",
+                                      {
+                                        "Ref": "AWS::Partition"
+                                      },
+                                      ":execute-api:us-east-1:",
+                                      {
+                                        "Ref": "AWS::AccountId"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "EndpointEEF1FD8F"
+                                      },
+                                      "/",
+                                      {
+                                        "Ref": "EndpointDeploymentStageprodB78BEEA0"
+                                      },
+                                      "/*/{proxy+}"
+                                    ]
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}": {
+                            "id": "ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}",
+                            "path": "hello-cdk-1/Endpoint/Default/{proxy+}/ANY/ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..{proxy+}",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                              "aws:cdk:cloudformation:props": {
+                                "action": "lambda:InvokeFunction",
+                                "functionName": {
+                                  "Fn::GetAtt": [
+                                    "HelloHandler2E4FBA4D",
+                                    "Arn"
+                                  ]
+                                },
+                                "principal": "apigateway.amazonaws.com",
+                                "sourceArn": {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      "arn:",
+                                      {
+                                        "Ref": "AWS::Partition"
+                                      },
+                                      ":execute-api:us-east-1:",
+                                      {
+                                        "Ref": "AWS::AccountId"
+                                      },
+                                      ":",
+                                      {
+                                        "Ref": "EndpointEEF1FD8F"
+                                      },
+                                      "/test-invoke-stage/*/{proxy+}"
+                                    ]
+                                  ]
+                                }
+                              }
+                            }
+                          },
+                          "Resource": {
+                            "id": "Resource",
+                            "path": "hello-cdk-1/Endpoint/Default/{proxy+}/ANY/Resource",
+                            "attributes": {
+                              "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
+                              "aws:cdk:cloudformation:props": {
+                                "httpMethod": "ANY",
+                                "resourceId": {
+                                  "Ref": "Endpointproxy39E2174E"
+                                },
+                                "restApiId": {
+                                  "Ref": "EndpointEEF1FD8F"
+                                },
+                                "authorizationType": "NONE",
+                                "integration": {
+                                  "type": "AWS_PROXY",
+                                  "uri": {
+                                    "Fn::Join": [
+                                      "",
+                                      [
+                                        "arn:",
+                                        {
+                                          "Ref": "AWS::Partition"
+                                        },
+                                        ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                                        {
+                                          "Fn::GetAtt": [
+                                            "HelloHandler2E4FBA4D",
+                                            "Arn"
+                                          ]
+                                        },
+                                        "/invocations"
+                                      ]
+                                    ]
+                                  },
+                                  "integrationHttpMethod": "POST"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "ANY": {
+                    "id": "ANY",
+                    "path": "hello-cdk-1/Endpoint/Default/ANY",
+                    "children": {
+                      "ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..": {
+                        "id": "ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..",
+                        "path": "hello-cdk-1/Endpoint/Default/ANY/ApiPermission.hellocdk1Endpoint01F8FAD0.ANY..",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                          "aws:cdk:cloudformation:props": {
+                            "action": "lambda:InvokeFunction",
+                            "functionName": {
+                              "Fn::GetAtt": [
+                                "HelloHandler2E4FBA4D",
+                                "Arn"
+                              ]
+                            },
+                            "principal": "apigateway.amazonaws.com",
+                            "sourceArn": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  "arn:",
+                                  {
+                                    "Ref": "AWS::Partition"
+                                  },
+                                  ":execute-api:us-east-1:",
+                                  {
+                                    "Ref": "AWS::AccountId"
+                                  },
+                                  ":",
+                                  {
+                                    "Ref": "EndpointEEF1FD8F"
+                                  },
+                                  "/",
+                                  {
+                                    "Ref": "EndpointDeploymentStageprodB78BEEA0"
+                                  },
+                                  "/*/"
+                                ]
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..": {
+                        "id": "ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..",
+                        "path": "hello-cdk-1/Endpoint/Default/ANY/ApiPermission.Test.hellocdk1Endpoint01F8FAD0.ANY..",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::Lambda::Permission",
+                          "aws:cdk:cloudformation:props": {
+                            "action": "lambda:InvokeFunction",
+                            "functionName": {
+                              "Fn::GetAtt": [
+                                "HelloHandler2E4FBA4D",
+                                "Arn"
+                              ]
+                            },
+                            "principal": "apigateway.amazonaws.com",
+                            "sourceArn": {
+                              "Fn::Join": [
+                                "",
+                                [
+                                  "arn:",
+                                  {
+                                    "Ref": "AWS::Partition"
+                                  },
+                                  ":execute-api:us-east-1:",
+                                  {
+                                    "Ref": "AWS::AccountId"
+                                  },
+                                  ":",
+                                  {
+                                    "Ref": "EndpointEEF1FD8F"
+                                  },
+                                  "/test-invoke-stage/*/"
+                                ]
+                              ]
+                            }
+                          }
+                        }
+                      },
+                      "Resource": {
+                        "id": "Resource",
+                        "path": "hello-cdk-1/Endpoint/Default/ANY/Resource",
+                        "attributes": {
+                          "aws:cdk:cloudformation:type": "AWS::ApiGateway::Method",
+                          "aws:cdk:cloudformation:props": {
+                            "httpMethod": "ANY",
+                            "resourceId": {
+                              "Fn::GetAtt": [
+                                "EndpointEEF1FD8F",
+                                "RootResourceId"
+                              ]
+                            },
+                            "restApiId": {
+                              "Ref": "EndpointEEF1FD8F"
+                            },
+                            "authorizationType": "NONE",
+                            "integration": {
+                              "type": "AWS_PROXY",
+                              "uri": {
+                                "Fn::Join": [
+                                  "",
+                                  [
+                                    "arn:",
+                                    {
+                                      "Ref": "AWS::Partition"
+                                    },
+                                    ":apigateway:us-east-1:lambda:path/2015-03-31/functions/",
+                                    {
+                                      "Fn::GetAtt": [
+                                        "HelloHandler2E4FBA4D",
+                                        "Arn"
+                                      ]
+                                    },
+                                    "/invocations"
+                                  ]
+                                ]
+                              },
+                              "integrationHttpMethod": "POST"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
           }
         }
       }
