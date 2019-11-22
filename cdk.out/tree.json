@@ -1,0 +1,705 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "hello-cdk-1": {
+        "id": "hello-cdk-1",
+        "path": "hello-cdk-1",
+        "children": {
+          "MyFirstQueue": {
+            "id": "MyFirstQueue",
+            "path": "hello-cdk-1/MyFirstQueue",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-1/MyFirstQueue/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SQS::Queue",
+                  "aws:cdk:cloudformation:props": {
+                    "visibilityTimeout": 300
+                  }
+                }
+              },
+              "Policy": {
+                "id": "Policy",
+                "path": "hello-cdk-1/MyFirstQueue/Policy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyFirstQueue/Policy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SQS::QueuePolicy",
+                      "aws:cdk:cloudformation:props": {
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sqs:SendMessage",
+                              "Condition": {
+                                "ArnEquals": {
+                                  "aws:SourceArn": {
+                                    "Ref": "MyFirstTopic0ED1F8A4"
+                                  }
+                                }
+                              },
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "sns.amazonaws.com"
+                              },
+                              "Resource": {
+                                "Fn::GetAtt": [
+                                  "MyFirstQueueFF09316A",
+                                  "Arn"
+                                ]
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "queues": [
+                          {
+                            "Ref": "MyFirstQueueFF09316A"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "hellocdk1MyFirstTopicB252874C": {
+                "id": "hellocdk1MyFirstTopicB252874C",
+                "path": "hello-cdk-1/MyFirstQueue/hellocdk1MyFirstTopicB252874C",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyFirstQueue/hellocdk1MyFirstTopicB252874C/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SNS::Subscription",
+                      "aws:cdk:cloudformation:props": {
+                        "protocol": "sqs",
+                        "topicArn": {
+                          "Ref": "MyFirstTopic0ED1F8A4"
+                        },
+                        "endpoint": {
+                          "Fn::GetAtt": [
+                            "MyFirstQueueFF09316A",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "MyFirstTopic": {
+            "id": "MyFirstTopic",
+            "path": "hello-cdk-1/MyFirstTopic",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-1/MyFirstTopic/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SNS::Topic",
+                  "aws:cdk:cloudformation:props": {
+                    "displayName": "My First Topic"
+                  }
+                }
+              }
+            }
+          },
+          "MyHelloConstruct": {
+            "id": "MyHelloConstruct",
+            "path": "hello-cdk-1/MyHelloConstruct",
+            "children": {
+              "Bucket-0": {
+                "id": "Bucket-0",
+                "path": "hello-cdk-1/MyHelloConstruct/Bucket-0",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-0/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-0/Notifications"
+                  }
+                }
+              },
+              "Bucket-1": {
+                "id": "Bucket-1",
+                "path": "hello-cdk-1/MyHelloConstruct/Bucket-1",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-1/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-1/Notifications"
+                  }
+                }
+              },
+              "Bucket-2": {
+                "id": "Bucket-2",
+                "path": "hello-cdk-1/MyHelloConstruct/Bucket-2",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-2/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-2/Notifications"
+                  }
+                }
+              },
+              "Bucket-3": {
+                "id": "Bucket-3",
+                "path": "hello-cdk-1/MyHelloConstruct/Bucket-3",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-3/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-1/MyHelloConstruct/Bucket-3/Notifications"
+                  }
+                }
+              }
+            }
+          },
+          "MyUser": {
+            "id": "MyUser",
+            "path": "hello-cdk-1/MyUser",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-1/MyUser/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::User",
+                  "aws:cdk:cloudformation:props": {}
+                }
+              },
+              "DefaultPolicy": {
+                "id": "DefaultPolicy",
+                "path": "hello-cdk-1/MyUser/DefaultPolicy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-1/MyUser/DefaultPolicy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                      "aws:cdk:cloudformation:props": {
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket0DAEC57E1",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket0DAEC57E1",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket18D9883BE",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket18D9883BE",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket2C1DA3656",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket2C1DA3656",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket398A5DE67",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket398A5DE67",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "policyName": "MyUserDefaultPolicy7B897426",
+                        "users": [
+                          {
+                            "Ref": "MyUserDC45028B"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "hello-cdk-2": {
+        "id": "hello-cdk-2",
+        "path": "hello-cdk-2",
+        "children": {
+          "MyFirstQueue": {
+            "id": "MyFirstQueue",
+            "path": "hello-cdk-2/MyFirstQueue",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-2/MyFirstQueue/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SQS::Queue",
+                  "aws:cdk:cloudformation:props": {
+                    "visibilityTimeout": 300
+                  }
+                }
+              },
+              "Policy": {
+                "id": "Policy",
+                "path": "hello-cdk-2/MyFirstQueue/Policy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyFirstQueue/Policy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SQS::QueuePolicy",
+                      "aws:cdk:cloudformation:props": {
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": "sqs:SendMessage",
+                              "Condition": {
+                                "ArnEquals": {
+                                  "aws:SourceArn": {
+                                    "Ref": "MyFirstTopic0ED1F8A4"
+                                  }
+                                }
+                              },
+                              "Effect": "Allow",
+                              "Principal": {
+                                "Service": "sns.amazonaws.com"
+                              },
+                              "Resource": {
+                                "Fn::GetAtt": [
+                                  "MyFirstQueueFF09316A",
+                                  "Arn"
+                                ]
+                              }
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "queues": [
+                          {
+                            "Ref": "MyFirstQueueFF09316A"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              },
+              "hellocdk2MyFirstTopic4B01F128": {
+                "id": "hellocdk2MyFirstTopic4B01F128",
+                "path": "hello-cdk-2/MyFirstQueue/hellocdk2MyFirstTopic4B01F128",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyFirstQueue/hellocdk2MyFirstTopic4B01F128/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::SNS::Subscription",
+                      "aws:cdk:cloudformation:props": {
+                        "protocol": "sqs",
+                        "topicArn": {
+                          "Ref": "MyFirstTopic0ED1F8A4"
+                        },
+                        "endpoint": {
+                          "Fn::GetAtt": [
+                            "MyFirstQueueFF09316A",
+                            "Arn"
+                          ]
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "MyFirstTopic": {
+            "id": "MyFirstTopic",
+            "path": "hello-cdk-2/MyFirstTopic",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-2/MyFirstTopic/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::SNS::Topic",
+                  "aws:cdk:cloudformation:props": {
+                    "displayName": "My First Topic"
+                  }
+                }
+              }
+            }
+          },
+          "MyHelloConstruct": {
+            "id": "MyHelloConstruct",
+            "path": "hello-cdk-2/MyHelloConstruct",
+            "children": {
+              "Bucket-0": {
+                "id": "Bucket-0",
+                "path": "hello-cdk-2/MyHelloConstruct/Bucket-0",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-0/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-0/Notifications"
+                  }
+                }
+              },
+              "Bucket-1": {
+                "id": "Bucket-1",
+                "path": "hello-cdk-2/MyHelloConstruct/Bucket-1",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-1/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-1/Notifications"
+                  }
+                }
+              },
+              "Bucket-2": {
+                "id": "Bucket-2",
+                "path": "hello-cdk-2/MyHelloConstruct/Bucket-2",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-2/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-2/Notifications"
+                  }
+                }
+              },
+              "Bucket-3": {
+                "id": "Bucket-3",
+                "path": "hello-cdk-2/MyHelloConstruct/Bucket-3",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-3/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                      "aws:cdk:cloudformation:props": {}
+                    }
+                  },
+                  "Notifications": {
+                    "id": "Notifications",
+                    "path": "hello-cdk-2/MyHelloConstruct/Bucket-3/Notifications"
+                  }
+                }
+              }
+            }
+          },
+          "MyUser": {
+            "id": "MyUser",
+            "path": "hello-cdk-2/MyUser",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "hello-cdk-2/MyUser/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::IAM::User",
+                  "aws:cdk:cloudformation:props": {}
+                }
+              },
+              "DefaultPolicy": {
+                "id": "DefaultPolicy",
+                "path": "hello-cdk-2/MyUser/DefaultPolicy",
+                "children": {
+                  "Resource": {
+                    "id": "Resource",
+                    "path": "hello-cdk-2/MyUser/DefaultPolicy/Resource",
+                    "attributes": {
+                      "aws:cdk:cloudformation:type": "AWS::IAM::Policy",
+                      "aws:cdk:cloudformation:props": {
+                        "policyDocument": {
+                          "Statement": [
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket0DAEC57E1",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket0DAEC57E1",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket18D9883BE",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket18D9883BE",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket2C1DA3656",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket2C1DA3656",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "Action": [
+                                "s3:GetObject*",
+                                "s3:GetBucket*",
+                                "s3:List*"
+                              ],
+                              "Effect": "Allow",
+                              "Resource": [
+                                {
+                                  "Fn::GetAtt": [
+                                    "MyHelloConstructBucket398A5DE67",
+                                    "Arn"
+                                  ]
+                                },
+                                {
+                                  "Fn::Join": [
+                                    "",
+                                    [
+                                      {
+                                        "Fn::GetAtt": [
+                                          "MyHelloConstructBucket398A5DE67",
+                                          "Arn"
+                                        ]
+                                      },
+                                      "/*"
+                                    ]
+                                  ]
+                                }
+                              ]
+                            }
+                          ],
+                          "Version": "2012-10-17"
+                        },
+                        "policyName": "MyUserDefaultPolicy7B897426",
+                        "users": [
+                          {
+                            "Ref": "MyUserDC45028B"
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
